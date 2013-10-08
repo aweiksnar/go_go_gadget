@@ -15,5 +15,5 @@ func main() {
 	x := 1
 	y := 2
 	swap(&x, &y)
-	fmt.Println("x=", x, "y=", y)
+	fmt.Println("x=", x, "y=", y) // x= 2 y= 1
 }
