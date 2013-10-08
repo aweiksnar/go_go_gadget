@@ -4,11 +4,11 @@ package main
 
 import "fmt"
 
-func swap(xPtr *int, yPtr *int) {
-	newX := *yPtr
-	newY := *xPtr
-	*xPtr = newX
-	*yPtr = newY
+func swap(x *int, y *int) {
+	newX := *y
+	newY := *x
+	*x = newX
+	*y = newY
 }
 
 func main() {

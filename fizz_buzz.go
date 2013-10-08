@@ -2,10 +2,6 @@ package main
 
 import "fmt"
 
-func main() {
-	printFizzBuzz()
-}
-
 func printFizzBuzz() {
 	for i := 1; i <= 100; i++ {
 		if i%3 == 0 && i%5 == 0 {
@@ -18,4 +14,8 @@ func printFizzBuzz() {
 			fmt.Println(i)
 		}
 	}
+}
+
+func main() {
+	printFizzBuzz()
 }
