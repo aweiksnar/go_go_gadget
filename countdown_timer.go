@@ -1,3 +1,5 @@
+// countdown timer using channels
+
 package main
 
 import (
