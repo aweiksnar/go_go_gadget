@@ -10,12 +10,9 @@ import (
 // decrements through time and sends to channel
 func timer(c chan string, min int) {
 	t := time.Minute * time.Duration(min)
-	for {
+	for t >= time.Second*0 {
 		c <- time.Duration.String(t)
 		t = t - time.Second*1
-		if t < time.Second*0 {
-			break
-		}
 	}
 }
 
@@ -41,5 +38,5 @@ func startTimer(mins int) {
 
 //counts down from this many minutes until it hits zero
 func main() {
-	startTimer(2)
+	startTimer(1)
 }
